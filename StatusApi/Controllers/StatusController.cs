@@ -13,6 +13,7 @@ public class StatusController : ControllerBase
     }
 
     //GET request http://localhost:5000/status
+    [ResponseCache(Duration = 120)]
     [HttpGet("/status")]
     public ActionResult GetTheStatus()
     {
